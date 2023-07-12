@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/anime-rain-01.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 1% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 50px;
+    padding: 5%;
+    text-align: left;
+    padding-left: 50px;
+}
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+
+}
+.text-box p{
+    margin: 10px 0 40 40px;
+    color: #fff;
+    font-size: 15px;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .nav-link ul li {
+        display: block;
+    }
+    .nav-link {
+        position: absolute;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/images.jpg);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -20px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-link ul{
+        padding: 30px;
+    }
+}
+
+/* -----about---- */
+
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+i{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.about h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    padding-top: 50px;
+    padding-bottom: -20px;
+}
+
+.row {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction:column;
+    }
+}
+
+
+
+/* ---info--- */
+
+.information{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.col .space{
+    text-align: left;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    width: 500px;
+    color: #fff;
+
+}
+.container {
+
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/city.png);;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.container img{
+    width: 300px;
+    height: 400px;
+    border-radius: 0%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    border-radius: 100%;
+}
+
+.education{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.edu ul li {
+    width: 100%;
+
+    padding-top: 4%;
+    text-align: center;
+    text-shadow: #444;
+    font-size: 30px;
+}
+.info-p {
+    font-size: 20px;
+}
+
+.interest {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.about h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    padding-top: 50px;
+    padding-bottom: -20px;
+}
+
+.row {
+
+    margin-top: 2%;
+
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.course-coldiv1 {
+    flex-basis: 31%;
+    background: #489dec;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-coldiv2 {
+    text-align: left;
+    flex-basis: 31%;
+    background: #489dec;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 6px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-coldiv3 {
+    color: #fff;
+    flex-basis: 31%;
+    background: #f40b0b;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 6px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-coldiv3 button{
+    font-size: 20px;
+    color: #fff;
+    background: #f40b0b;
+}
+
+
+/* ---contact--- */
+
+.contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.course-col1 {
+    flex-basis: 31%;
+    background: #1e3896;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col2 {
+    flex-basis: 31%;
+    background: #c50707;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col3 {
+    flex-basis: 31%;
+    background: #a6b406;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col1:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 161, 242, 0.2);
+}
+
+.button1 {
+    font-size: 20px;
+    color: #fff;
+    background: #1e3896;
+}
+
+.button2 {
+    font-size: 20px;
+    color: #fff;
+    background: #ac0707;
+}
+
+.button3 {
+    font-size: 20px;
+    color: #fff;
+    background: #86a10b;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+      <a href="index.html"><img src="image/20230709_204342.jpg"></a>
+          <div class="nav-link" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a a href="index.html">Home</a></li>
+              <li><a a href="about.html">About</a></li>
+              <li><a a href="info.html">Personal Info</a></li>
+              <li><a a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Welcome</h1>
+        <p>“Simplicity is the ultimate sophistication.” </p>
+
+
+      </div>
+
+    </section>
+
+      
+
+
+
+<!-- -----I cried doing this Toggle menu T_T----- -->
+
+<script>
+  var navLink = document.getElementById("navLink");
+
+  function showMenu(){
+    navLink.style.right="0";
+  }
+  function hideMenu(){
+    navLink.style.right="-200px";
+  }
+  
+</script>
+
+
+</body>
+</html>

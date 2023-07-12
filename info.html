@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+    <nav>
+      <a href="index.html"><img src="image/20230709_204342.jpg"></a>
+          <div class="nav-link" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a a href="index.html">Home</a></li>
+              <li><a a href="about.html">About</a></li>
+              <li><a a href="info.html">Personal Info</a></li>
+              <li><a a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>My personal Info</h1>
+        <p>“Simplicity is the ultimate sophistication.” </p>
+      </div>
+
+    </section>
+
+    <!-- ----info---- -->
+
+    <section class="information">
+
+      <h1>Personal Info</h1>
+      <i>My Personal information</i>
+
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img src="image/received_696616095634781.jpeg">
+          </div>
+          <div class="col">
+            <h4 class="space">Name: John Paul C. Manarin</h4>
+            <h4 class="space">Age: 19</h4>
+            <h4 class="space">Date of Birth: October 14, 2003</h4>
+            <h4 class="space">Address: 660 Magllanes St. Brgy 6 Carmona Cavite</h4>
+            <h4 class="space">Conatact no: 09271452543</h4>
+            <h4 class="space">Email: jpcherreguinemanarin@gmail.com</h4>
+            <h4 class="space">Status: Single</h4>
+            <h4 class="space">Occupation: Student</h4>
+          </div>
+        </div>
+
+
+
+
+    </section>
+
+
+<!-- ---education--- -->
+
+<section class="education">
+
+  <h1>Education Status</h1>
+  <i>My education information</i>
+
+  <div class="edu">
+  <ul>
+    <li>Elementary</li>
+    <p class="info-p">Graduated at Carmona Elementary School</p>
+    <h5>Address: 8373+MFV, Purificacion, Carmona, Cavite</h5>
+    <li>High School</li>
+    <p class="info-p">Graduated at Carmona National High School</p>
+    <h5>Address: 4116 Rosario Rd, Carmona, Cavite</h5>
+    <li>Senior High School</li>
+    <p class="info-p">Graduated at Angelo Levardo Loyola Senior High School</p>
+    <h5>Address: 72PQ+QMQ, Alfonso Macha Street, Carmona, 4112 Cavite</h5>
+    <li>Collage (First year)</li>
+    <p class="info-p">Currently studying at Cavite State University - Carmona (CVSU)</p>
+    <h5>Located in: Cavite State University - Don Severino Delas Alas Campus</h5>
+    <h5>Address: 8387+QVP, Maduya, Carmona, Cavite</h5>
+  </ul>
+  </div>
+</section>
+
+
+<!-- ---interest and expertice--- -->
+
+<section class="interest">
+
+  <h1>Interest and Expertice</h1>
+
+
+  <div class="row">
+
+    <div class="course-coldiv1">
+    <h3>Interest</h3>
+    <h4>1. Anime</h4>
+    <h4>2. Youtube</h4>
+    <h4>3. Games</h4>
+    <h4>4. Exercise</h4>
+    </div>
+
+    <div class="course-coldiv3">
+      <h2 style="text-align: center;">Subscribe to my <a href="https://www.youtube.com/channel/UCjtjR0woRgd1yKRKSIbe-NA"><button>Youtube</button></a> channel</h2>
+
+    </div>
+
+    <div class="course-coldiv2">
+      <h3 style="text-align: center;">Expertice</h3>
+      <h4>1. Creating content in Youtube</h4>
+      <h4>2. Editing Video</h4>
+      <h4>3. HTML and CSS (Currently Learning)</h4>
+      <h4>4. Programming Java Language (Currently Learning)</h4>
+    </div>
+
+  </div>
+</section>
+
+
+
+    
+
+<!-- -----I cried doing this Toggle menu T_T----- -->
+
+<script>
+  var navLink = document.getElementById("navLink");
+
+  function showMenu(){
+    navLink.style.right="0";
+  }
+  function hideMenu(){
+    navLink.style.right="-200px";
+  }
+  
+</script>
+
+
+</body>
+</html>

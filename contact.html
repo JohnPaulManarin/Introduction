@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+      <a href="index.html"><img src="image/20230709_204342.jpg"></a>
+          <div class="nav-link" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a a href="index.html">Home</a></li>
+              <li><a a href="about.html">About</a></li>
+              <li><a a href="info.html">Personal Info</a></li>
+              <li><a a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>My contact</h1>
+        <p>“Simplicity is the ultimate sophistication.” </p>
+      </div>
+    </section>
+
+
+    <!-- ---contact--- -->
+
+    <section class="about">
+      <h1>Contact</h1>
+      <i>You can contact me any one of this.</i>
+      
+      <h3>Contacts me Here</h3>
+
+      <div class="row">
+
+        <div class="course-col1">
+        <a href="https://www.facebook.com/"><button class="button1"> Facebook</button></a>
+      </div>
+        <div class="course-col2">
+        <a href="https://www.youtube.com/channel/UCjtjR0woRgd1yKRKSIbe-NA"><button class="button2">Youtube</button></a>
+      </div>
+      <div class="course-col3">
+        <a href="jpcherreguinemanarin@gmail.com"><button class="button3">Email</button></a>
+      </div>
+
+      </div>
+
+    </section>
+
+
+
+<!-- -----I cried doing this Toggle menu T_T----- -->
+
+<script>
+  var navLink = document.getElementById("navLink");
+
+  function showMenu(){
+    navLink.style.right="0";
+  }
+  function hideMenu(){
+    navLink.style.right="-200px";
+  }
+  
+</script>
+
+
+</body>
+</html>

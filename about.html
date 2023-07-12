@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+      <a href="index.html"><img src="image/20230709_204342.jpg"></a>
+          <div class="nav-link" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a a href="index.html">Home</a></li>
+              <li><a a href="about.html">About</a></li>
+              <li><a a href="info.html">Personal Info</a></li>
+              <li><a a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>About</h1>
+        <p>“Simplicity is the ultimate sophistication.” </p>
+
+
+      </div>
+
+    </section>
+
+    <!-- -----about---- -->
+      <section class="about">
+        <h1>About Us</h1>
+        <i>Things you need to know about this website.</i>
+        
+        <h3>About The Website</h3>
+
+        <div class="row">
+
+          <div class="course-col">
+          
+          <p>The primary objective of this website is to showcase the personal information of a student named John Paul C. Manarin and to serve as a platform for sharing and documenting all the skill he has aquired throughout his ITEC-50 course</p>
+          </div>
+          <div class="course-col">
+          <p>By exploring this website, visitors will be able to gain insights into John Paul's educational journey, his achievements, and the valuable experience he has gained from his ITEC-50 course.</p>
+        </div>
+        <div class="course-col">
+          <p>By creating this website, John Paul aims to provide a comprehensive resource that encapsulates his educationaljourney and serves as a testament to his growth and development in the field of ITEC-50.</p>
+        </div>
+        </div>
+
+      </section>
+
+
+
+<!-- -----I cried doing this Toggle menu T_T----- -->
+
+<script>
+  var navLink = document.getElementById("navLink");
+
+  function showMenu(){
+    navLink.style.right="0";
+  }
+  function hideMenu(){
+    navLink.style.right="-200px";
+  }
+  
+</script>
+
+
+</body>
+</html>
